@@ -319,6 +319,7 @@ header .header_icons .menu_btn span {
   width: 20px;
   background: none;
   border: 3px solid #fff;
+  outline: none;
   opacity: 1;
 }
 .wrapper .testimony_section .swiper-pagination span.swiper-pagination-bullet-active {
@@ -553,7 +554,7 @@ header .header_icons .menu_btn span {
 }
 
 .animated.fast {
-  animation-duration: 500ms;
+  animation-duration: 300ms;
 }
 
 @media screen and (max-width: 1680px) {
@@ -794,11 +795,15 @@ header .header_icons .menu_btn span {
     left: 0;
     width: 100%;
     justify-content: space-between;
+    background: #fff;
   }
   header .header_icons .icon a {
-    width: calc(33.33% - 2px);
+    width: calc(33.33% - 1px);
     border-radius: 0px;
     margin: 0;
+  }
+  header .header_icons .menu_btn {
+    cursor: default;
   }
   header .header_icons .menu_btn span {
     display: none;
